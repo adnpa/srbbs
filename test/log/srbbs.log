@@ -1,0 +1,33 @@
+{"level":"INFO","time":"2024-05-15T04:46:45.553+0800","caller":"handler/user_handler.go:17","msg":"get req"}
+2024-05-15T04:46:45.553+0800	INFO	handler/user_handler.go:17	get req
+{"level":"INFO","time":"2024-05-15T04:46:45.554+0800","caller":"handler/user_handler.go:23","msg":"form","form":{"username":"","email":"","gender":0,"password":"","confirm_password":""}}
+2024-05-15T04:46:45.554+0800	INFO	handler/user_handler.go:23	form	{"form": {"username":"","email":"","gender":0,"password":"","confirm_password":""}}
+{"level":"ERROR","time":"2024-05-15T04:46:45.554+0800","caller":"handler/user_handler.go:27","msg":"sign in with invalid param","error":"invalid character 'c' looking for beginning of value"}
+2024-05-15T04:46:45.554+0800	ERROR	handler/user_handler.go:27	sign in with invalid param	{"error": "invalid character 'c' looking for beginning of value"}
+{"level":"INFO","time":"2024-05-15T04:47:12.991+0800","caller":"handler/user_handler.go:17","msg":"get req"}
+2024-05-15T04:47:12.991+0800	INFO	handler/user_handler.go:17	get req
+{"level":"INFO","time":"2024-05-15T04:47:12.991+0800","caller":"handler/user_handler.go:23","msg":"form","form":{"username":"","email":"","gender":0,"password":"","confirm_password":""}}
+2024-05-15T04:47:12.991+0800	INFO	handler/user_handler.go:23	form	{"form": {"username":"","email":"","gender":0,"password":"","confirm_password":""}}
+{"level":"ERROR","time":"2024-05-15T04:47:12.992+0800","caller":"handler/user_handler.go:27","msg":"sign in with invalid param","error":"invalid character 'c' looking for beginning of value"}
+2024-05-15T04:47:12.992+0800	ERROR	handler/user_handler.go:27	sign in with invalid param	{"error": "invalid character 'c' looking for beginning of value"}
+{"level":"INFO","time":"2024-05-15T04:48:06.384+0800","caller":"handler/user_handler.go:17","msg":"get req"}
+2024-05-15T04:48:06.384+0800	INFO	handler/user_handler.go:17	get req
+{"level":"INFO","time":"2024-05-15T04:48:06.384+0800","caller":"handler/user_handler.go:23","msg":"form","form":{"username":"","email":"","gender":0,"password":"","confirm_password":""}}
+2024-05-15T04:48:06.384+0800	INFO	handler/user_handler.go:23	form	{"form": {"username":"","email":"","gender":0,"password":"","confirm_password":""}}
+{"level":"ERROR","time":"2024-05-15T04:48:06.384+0800","caller":"handler/user_handler.go:27","msg":"sign in with invalid param","error":"invalid character 'c' looking for beginning of value"}
+2024-05-15T04:48:06.384+0800	ERROR	handler/user_handler.go:27	sign in with invalid param	{"error": "invalid character 'c' looking for beginning of value"}
+{"level":"INFO","time":"2024-05-17T00:25:20.998+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T00:26:48.596+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T00:30:49.516+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T00:31:10.109+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T00:32:28.942+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T00:35:53.890+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T00:36:16.130+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T00:36:28.878+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T01:01:25.903+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T01:02:28.763+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T01:02:35.237+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T01:03:12.148+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T01:11:42.038+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T02:07:08.543+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T02:07:40.367+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}

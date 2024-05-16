@@ -1,0 +1,31 @@
+# 注释以井号（#）开头
+
+name: "srbbs"
+port: 8081
+version: "0.1"
+mode: "dev"
+machine_id: 1
+jwt_key: "UubMLwC+SKs2xvGVgjXLLa0p+x1Q69kN82/U+E/+lSg="
+
+postgresql:
+  host: localhost
+  user: srbbs
+  password: 123456
+  dbname: srbbs
+  port: 5432
+  max_open_conns: 100
+  max_idle_conns: 10
+  sslmode: "disable"
+  time_zone: "Asia/Shanghai"
+
+
+redis:
+  { }
+
+log:
+  level: "debug"
+  filename: "./log/srbbs.log"
+  max_size: 500
+  max_backups: 3
+  max_age: 28
+  local_time: true
