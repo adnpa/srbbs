@@ -121,3 +121,48 @@
 {"level":"INFO","time":"2024-05-16T15:41:23.364+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
 {"level":"INFO","time":"2024-05-16T15:41:23.443+0800","caller":"srserver/server.go:50","msg":"init server success"}
 {"level":"INFO","time":"2024-05-16T15:41:54.249+0800","caller":"handler/response.go:40","msg":"reply success"}
+{"level":"INFO","time":"2024-05-17T03:46:27.566+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T03:46:57.506+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T03:57:46.048+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T04:05:17.861+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T04:08:03.230+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T04:10:19.675+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T04:11:23.504+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T04:16:01.203+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T04:24:50.249+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T04:25:32.842+0800","caller":"srlogger/logger.go:43","msg":"logger level: debug"}
+{"level":"INFO","time":"2024-05-17T04:45:18.982+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"INFO","time":"2024-05-17T04:48:31.328+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"INFO","time":"2024-05-17T04:49:41.218+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"INFO","time":"2024-05-17T04:52:30.507+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"INFO","time":"2024-05-17T14:53:44.950+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"INFO","time":"2024-05-17T14:53:56.021+0800","caller":"jwt/jwt.go:97","msg":"error parse token","error":"token has invalid claims: token is expired"}
+{"level":"INFO","time":"2024-05-17T14:55:30.737+0800","caller":"jwt/jwt.go:97","msg":"error parse token","error":"token has invalid claims: token is expired"}
+{"level":"INFO","time":"2024-05-17T15:23:46.127+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"WARN","time":"2024-05-17T15:23:56.444+0800","caller":"postgresql/community.go:19","msg":"get community by id err","error":"record not found"}
+{"level":"INFO","time":"2024-05-17T15:58:33.291+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"INFO","time":"2024-05-17T15:59:24.721+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"INFO","time":"2024-05-17T16:05:51.681+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"INFO","time":"2024-05-17T16:06:26.656+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"INFO","time":"2024-05-17T16:07:02.632+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"INFO","time":"2024-05-17T16:07:59.318+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"INFO","time":"2024-05-17T16:09:04.057+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"INFO","time":"2024-05-17T16:11:26.615+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"INFO","time":"2024-05-18T03:27:19.177+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"WARN","time":"2024-05-18T03:38:43.998+0800","caller":"service/post_service.go:132","msg":"redis.GetPostIDsInOrder(p) return 0 data"}
+{"level":"ERROR","time":"2024-05-18T03:39:41.035+0800","caller":"postgresql/post.go:78","msg":"Error getting posts","error":"clause ORDER BY is banned"}
+{"level":"INFO","time":"2024-05-18T03:44:04.149+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"ERROR","time":"2024-05-18T03:44:09.356+0800","caller":"postgresql/post.go:78","msg":"Error getting posts","error":"clause ORDER BY is banned"}
+{"level":"INFO","time":"2024-05-18T03:46:34.833+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"ERROR","time":"2024-05-18T03:46:43.100+0800","caller":"postgresql/post.go:78","msg":"Error getting posts","error":"clause ORDER BY is banned"}
+{"level":"INFO","time":"2024-05-18T03:51:43.402+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"INFO","time":"2024-05-18T04:29:23.333+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"INFO","time":"2024-05-18T04:37:56.249+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"INFO","time":"2024-05-18T04:44:58.820+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"INFO","time":"2024-05-18T04:46:11.638+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"INFO","time":"2024-05-18T04:47:51.307+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"INFO","time":"2024-05-18T04:53:28.390+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"INFO","time":"2024-05-18T04:54:09.482+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"INFO","time":"2024-05-18T04:55:51.385+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"INFO","time":"2024-05-18T04:56:18.231+0800","caller":"srserver/server.go:50","msg":"init server success"}
+{"level":"INFO","time":"2024-05-18T16:57:45.504+0800","caller":"srserver/server.go:33","msg":"init server success"}

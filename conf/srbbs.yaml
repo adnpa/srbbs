@@ -19,6 +19,7 @@ postgresql:
   time_zone: "Asia/Shanghai"
 
 
+# redis不支持windows 使用远程redis服务
 redis:
   host: localhost
   password: ""

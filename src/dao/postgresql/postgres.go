@@ -19,6 +19,7 @@ func init() {
 	if err != nil {
 		panic(err)
 	}
+	db.AllowGlobalUpdate = true
 	sqldb, _ := db.DB()
 	sqldb.SetMaxOpenConns(cfg.MaxOpenConns)
 	sqldb.SetMaxIdleConns(cfg.MaxIdleConns)

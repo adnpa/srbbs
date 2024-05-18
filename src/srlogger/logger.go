@@ -1,7 +1,6 @@
 package srlogger
 
 import (
-	"fmt"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"gopkg.in/natefinch/lumberjack.v2"
@@ -40,7 +39,7 @@ func init() {
 	}
 	lg = zap.New(core, zap.AddCaller())
 	zap.ReplaceGlobals(lg)
-	Logger().Info(fmt.Sprintf("logger level: %s", lg.Level()))
+	//Logger().Info(fmt.Sprintf("logger level: %s", lg.Level()))
 }
 
 func getEncoder() zapcore.Encoder {

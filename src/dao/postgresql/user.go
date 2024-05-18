@@ -32,6 +32,18 @@ func CreateUser(user *model.User) error {
 	return nil
 }
 
+func GetUserById(userId int64) (*model.User, error) {
+	u := query.User
+	ctx, cancel := context.WithTimeout(context.Background(), 2*time.Second)
+	defer cancel()
+
+	first, err := query.User.WithContext(ctx).Where(u.UserID.Eq(userId)).First()
+	if err != nil {
+		return nil, err
+	}
+	return first, err
+}
+
 func GetUserByUserName(uname string) (*model.User, error) {
 	u := query.User
 	ctx, cancel := context.WithTimeout(context.Background(), 2*time.Second)

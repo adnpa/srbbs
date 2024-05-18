@@ -19,7 +19,7 @@ import (
 func SignUpHandler(c *gin.Context) {
 	var err error
 	//  1 获取参数
-	var form model.RegisterForm
+	var form model.C2SRegister
 	//  2 校验数据有效性
 	if err = c.ShouldBindJSON(&form); err != nil {
 		//zap.L().Error("sign up with invalid param", zap.Error(err), zap.Any("form param", form))
@@ -55,7 +55,7 @@ func SignUpHandler(c *gin.Context) {
 func LogInHandler(c *gin.Context) {
 	var err error
 	//  1 获取参数
-	var form model.LogInForm
+	var form model.C2SLogIn
 	//  2 校验数据有效性
 	if err = c.ShouldBindJSON(&form); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})

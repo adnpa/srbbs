@@ -1,4 +1,6 @@
 {
-  "username": "John Doe",
-  "password": "123456"
+  "post_id": 11,
+  "community_id": 1114,
+  "title": "测试标题",
+  "content": "这是关于golang的文章"
 }
