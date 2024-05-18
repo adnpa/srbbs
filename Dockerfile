@@ -7,7 +7,7 @@ FROM golang:1.22 AS go-builder
 
 # 为我们的镜像设置必要的环境变量
 ENV GO111MODULE=on \
-GOPROXY=https://goproxy.io,direct \
+GOPROXY=https://goproxy.cn,direct \
 CGO_ENABLED=0 \
 GOOS=linux \
 GOARCH=amd64
@@ -15,11 +15,11 @@ GOARCH=amd64
 WORKDIR /build
 
 # pre-copy/cache go.mod for pre-downloading dependencies and only redownloading them in subsequent builds if they change
-COPY go.mod go.sum ./
+COPY go.mod go.sum /build
 RUN go mod download && go mod verify
 
 COPY . .
-RUN go build -o srbbs-app
+RUN go build -o srbbs-app ./src/
 
 CMD ["srbbs-app"]
 
@@ -63,4 +63,4 @@ COPY --from=go-builder /build  /
 EXPOSE 8081
 
 # 需要运行的命令
-ENTRYPOINT ["/srbbs-app"]
+ENTRYPOINT ["/build/srbbs-app"]
