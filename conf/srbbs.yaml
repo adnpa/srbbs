@@ -8,7 +8,7 @@ machine_id: 1
 jwt_key: "UubMLwC+SKs2xvGVgjXLLa0p+x1Q69kN82/U+E/+lSg="
 
 postgresql:
-  host: localhost
+  host: postgres
   user: srbbs
   password: 123456
   dbname: srbbs
@@ -21,7 +21,7 @@ postgresql:
 
 # redis不支持windows 使用远程redis服务
 redis:
-  host: localhost
+  host: redis
   password: ""
   port: 6379
   db: 0
