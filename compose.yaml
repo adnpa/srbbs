@@ -17,20 +17,21 @@ services:
       - back-tier
   postgres:
     image: "postgres:13"
+    restart: always
     environment:
-      - POSTGRES_USER: srbbs
-      - POSTGRES_PASSWORD: 123456
-#    ports:
-#      - "5432:5432"
+      POSTGRES_USER: srbbs
+      POSTGRES_PASSWORD: 123456
+    volumes:
+      - ./script/setup.sql:/docker-entrypoint-initdb.d/setup.sql
     networks:
       - back-tier
   redis:
     image: "redis:alpine"
-#    ports:
-#      - "6379:6379"
+    restart: always
     networks:
       - back-tier
 
 networks:
   #  front-tier:
   back-tier:
+
