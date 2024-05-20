@@ -34,12 +34,15 @@ type PostgresConfig struct {
 }
 
 type RedisConfig struct {
-	Host         string `mapstructure:"host"`
-	Password     string `mapstructure:"password"`
-	Port         int    `mapstructure:"port"`
-	DB           int    `mapstructure:"db"`
-	PoolSize     int    `mapstructure:"pool_size"`
-	MinIdleConns int    `mapstructure:"min_idle_conns"`
+	Host          string `mapstructure:"host"`
+	Password      string `mapstructure:"password"`
+	Port          int    `mapstructure:"port"`
+	DB            int    `mapstructure:"db"`
+	PoolSize      int    `mapstructure:"pool_size"`
+	MinIdleConns  int    `mapstructure:"min_idle_conns"`
+	ConnectType   string `mapstructure:"connect_type"`
+	SSHRemoteHost string `mapstructure:"ssh_remote_host"`
+	SSHFile       string `mapstructure:"ssh_file"`
 }
 
 type LogConfig struct {

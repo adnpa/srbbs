@@ -8,7 +8,7 @@ machine_id: 1
 jwt_key: "UubMLwC+SKs2xvGVgjXLLa0p+x1Q69kN82/U+E/+lSg="
 
 postgresql:
-  host: postgres
+  host: localhost
   user: srbbs
   password: 123456
   dbname: srbbs
@@ -21,12 +21,15 @@ postgresql:
 
 # redis不支持windows 使用远程redis服务
 redis:
-  host: redis
+  host: localhost
   password: ""
   port: 6379
   db: 0
   pool_size: ""
   min_idle_conns: ""
+  connect_type: ""
+  ssh_remote_host: "ipaddr:22"
+  ssh_file: C:\Users\xx\.ssh\id_ed25519
 
 log:
   level: "debug"

@@ -16,8 +16,25 @@ RUN go mod download && go mod verify
 COPY . .
 RUN go build -o srbbs-app ./src/
 
-CMD ["srbbs-app"]
+
+
+
+FROM centos:7
+ENV container docker
+RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == \
+systemd-tmpfiles-setup.service ] || rm -f $i; done); \
+rm -f /lib/systemd/system/multi-user.target.wants/*;\
+rm -f /etc/systemd/system/*.wants/*;\
+rm -f /lib/systemd/system/local-fs.target.wants/*; \
+rm -f /lib/systemd/system/sockets.target.wants/*udev*; \
+rm -f /lib/systemd/system/sockets.target.wants/*initctl*; \
+rm -f /lib/systemd/system/basic.target.wants/*;\
+rm -f /lib/systemd/system/anaconda.target.wants/*;
+VOLUME [ "/sys/fs/cgroup" ]
+#CMD ["/usr/sbin/init"]
+
+COPY --from=go-builder /build/ /build/
 
 EXPOSE 8081
 
-ENTRYPOINT ["srbbs-app"]
+ENTRYPOINT ["/build/srbbs-app"]
