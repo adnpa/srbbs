@@ -37,4 +37,8 @@ COPY --from=go-builder /build/ /build/
 
 EXPOSE 8081
 
-ENTRYPOINT ["/build/srbbs-app"]
+WORKDIR /build
+
+ENTRYPOINT ["./srbbs-app"]
+
+

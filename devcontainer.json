@@ -1,0 +1,11 @@
+{
+  "dockerComposeFile": "./compose.yaml",
+  service: "app",
+  runServices: [
+    "app",
+    "postgres",
+    "redis"
+  ],
+  //  workspaceFolder:,
+}
+
